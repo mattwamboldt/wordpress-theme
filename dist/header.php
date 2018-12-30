@@ -15,9 +15,16 @@
         <?php endif;?>
     </head>
     <body <?php body_class(); ?>>
-        <header>
+        <header id="main-header">
             <div class='container'>
-                <a id='main-logo' href='/'>MATT WAMBOLDT</a>
+                <div class="branding">
+                    <a class='logo' href='/'>MATT WAMBOLDT</a>
+                    <div id="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
                 <?php
                     $menuOptions = array(
                         'theme_location' => 'primary',
